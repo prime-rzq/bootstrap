@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四川信息职业技术学院-首页</title>
+    <!-- 引入第三方样式库 -->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- 引入自定义样式 -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- 第一行布局 -->
+    <div class="container">
+        <div class="row bg-top">
+            <div class="col">四川省示范性高等职业院校</div>
+            <div class="col text-right">English Version</div>
+        </div>
+    </div>
+    <!-- 第二行布局 -->
+    <div class="container-fluid text-center bg-logo">
+        <img src="img/logo.png" class='logo'>
+    </div>
+    
+    <div class="container-fluid" style='transform: translateY(-3rem);'>
+        <!-- 第三行布局（导航条） -->
+        <div class="container border-top  pl-0 pr-0">
+            <nav class='navbar narbar-light navbar-expand-lg m-0 pl-0 pr-0'>
+                <a class="nav-link">关于川信</a>
+                <button class='navbar-toggler' 
+                data-toggle='collapse'
+                data-target='#myNavBar'
+                >
+                <svg width='20' height='20' viewbox='0 0 100 100'>
+                    <path d='
+                    M5,5  L95,5  
+                    M5,30 L95,30
+                    M5,55 L95,55
+                    M40,80 H60 L50,90
+                    Z
+                    ' 
+                    stroke='#666' 
+                    stroke-width='10'
+                    stroke-linecap='round'
+                    ></path>
+                </svg>
+                </button>
+                <div id='myNavBar' class='collapse navbar-collapse'>
+                    <ul class='navbar-nav'>
+                        <li class='nav-item'><a class="nav-link">专业设置</a></li>
+                        <li class='nav-item'><a class="nav-link">招生就业</a></li>
+                        <li class='nav-item'><a class="nav-link">人才引进</a></li>
+                        <li class='nav-item'><a class="nav-link">人文川信</a></li>
+                        <li class='nav-item'><a class="nav-link">信息公开</a></li>
+                        <li class='nav-item'><a class="nav-link">联系我们</a></li>
+                        <li class='nav-item'><a class="nav-link">录取查询</a></li>
+                    </ul>
+                    <div class='ml-2 mr-2'>
+                        <svg width='20' height='20' viewbox='0 0 100 100'>
+                            <path d='
+                            M5,5  L95,5  
+                            M5,30 L95,30
+                            M5,55 L95,55
+                            M40,80 H60 L50,90
+                            Z
+                            ' 
+                            stroke='#666' 
+                            stroke-width='10'
+                            stroke-linecap='round'
+                            ></path>
+                        </svg>
+                        站点地图
+                    </div>
+                    <form action="">
+                        <div class='my-search-box'>
+                            <input type="text" placeholder="搜索川信">
+                            <!-- <i class='fa fa-search'></i> -->
+                            <svg width='20' height='20' viewbox='0 0 100 100'>
+                                <circle cx='40' cy='40' r='30' 
+                                fill='none' 
+                                stroke='#666' 
+                                stroke-width='10'></circle>
+                                <line x1='63' y1='63' x2='90' y2='90'
+                                stroke='#666' 
+                                stroke-width='10' 
+                                stroke-linecap='round'></line>
+                            </svg>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <!-- 第四行布局（轮播图） -->
+        <div class='container pl-0 pr-0'>
+            <div class="carousel slide" id='lbt'>
+                <!-- 图 -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/1.jpg" class="w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/2.jpg" class="w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/3.jpg" class="w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/4.png" class="w-100">
+                    </div>
+                </div>
+                <!-- 指示器 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#lbt" data-slide-to='0' class='active'></li>
+                    <li data-target="#lbt" data-slide-to='1'></li>
+                    <li data-target="#lbt" data-slide-to='2'></li>
+                    <li data-target="#lbt" data-slide-to='3'></li>
+                </ol>
+                <!-- 方向箭头 -->
+                <a class="carousel-control-prev" href="#lbt" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#lbt" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!-- 第五行布局（文章列表） -->
+        <div class="container pl-0 pr-0">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <style>
+                        /* 修改bootstrap选项卡样式 */
+                        .nav-link.active{
+                            border:none;
+                            border-bottom: orange 2px solid !important;
+                            position: relative;
+                        } 
+                        .nav-link.active::before{
+                            content: '';
+                            width: 0;
+                            height: 0;
+                            border: 6px solid orange;
+                            border-color: transparent transparent orange transparent; 
+                            position: absolute;
+                            left: 50%;
+                            bottom: 0;
+                            margin-left: -6px;
+                        } 
+                        .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+                            border-color: transparent !important;
+                            border-bottom: orange 2px solid !important;
+                        } 
+                        .tab-content ul li {
+                            background: url(line.svg) 0 .75rem repeat-x #fff;
+                        }
+                        .tab-content ul li a{ background:#fff; padding-right:.5rem;}
+                        .tab-content ul li span{ background:#fff; padding-left:.5rem;}
+                    </style>
+                    <!-- 选项卡 -->
+                    <div class="nav nav-tabs">
+                        <a class='nav-item nav-link active' href='#tbNews' data-toggle="tab">要闻</a>
+                        <a class='nav-item nav-link' href='#tbZiXun' data-toggle="tab">资讯</a>
+                        <a class='nav-item nav-link' href='#tbMedia' data-toggle="tab">聚焦川信</a>
+                    </div>
+                    <div class="tab-content pt-2 pl-1" id='tbCon'>
+                        <div class="tab-pane fade show active" id='tbNews'>
+                            <ul class='pl-3 m-1'>
+                                <li><a href="">要闻信息列表1</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">要闻信闻信息列表2</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">要闻信息列表闻信息列表3</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">要闻信息列表4</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">要闻信息列闻信表5</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">要闻信息列闻信表5</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">要闻信息列闻信表5</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">要闻信息列闻信表5</a><span class='float-right'>[2020-08-23]</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id='tbZiXun'>
+                            <ul class='pl-3 m-1'>
+                                <li><a href="">资讯信息列表1</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">资讯信闻信息列表2</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">资讯信息列表闻信息列表3</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">资讯信息列表4</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">资讯信息列闻信表5</a><span class='float-right'>[2020-08-23]</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id='tbMedia'>
+                            <ul class='pl-3 m-1'>
+                                <li><a href="">聚焦川信列表1</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">聚焦川信聚焦川信列表2</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">聚焦川信聚焦川信聚焦川信聚焦川信表3</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">聚焦川信表4</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">要闻信息列闻信表5</a><span class='float-right'>[2020-08-23]</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <!-- 选项卡 -->
+                    <div class="nav nav-tabs">
+                        <a class='nav-item nav-link' href='#tbNotice' data-toggle="tab">通知公告</a>
+                    </div>
+                    <div class="tab-content pt-2 pl-1" id='tbCon'>
+                        <div class="tab-pane fade show active" id='tbNotice'>
+                            <ul class='pl-3 m-1'>
+                                <li><a href="">通知公告信息列表1</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">通知公告信闻信息列表2</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">通知公告信息列表闻信息列表3</a><span class='float-right'>[2020-08-23]</span></li>
+                                <li><a href="">通知公告信息列表4</a><span class='float-right'>[2020-08-23]</span></li>
+                            </ul>
+                        </div>
+                        <div class="bg-danger mt-3 rounded" style="height: 5rem;"></div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <div class="bg-light mt-3 h-100 rounded">
+                        <div class="container pt-3 text-center">
+                            <div class="row">
+                                <div class="col-4 col-md-12">
+                                    <i class='fa fa-desktop' style='font-size: 40px;'></i>
+                                    <p>信息门户</p> 
+                                </div>
+                                <div class="col-4 col-md-12">
+                                    <i class='fa fa-user' style='font-size: 40px;'></i>
+                                    <p>办事大厅</p>
+                                </div>
+                                <div class="col-4 col-md-12">
+                                    <a>在校学生</a> <br>
+                                    <a>教职员工</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第六行（版权模块） -->
+        <style>
+            @media screen and (max-width: 600px) {
+                .copyright { display: none; }
+            }
+        </style>
+        <div class='bg-secondary pt-2 pb-2 mt-5 text-center'>
+            版权所有：四川信息职业技术学院 
+            <span class='copyright'>
+                | 技术支持：信息中心 
+                | 视觉支持：数字艺术系 
+                | 蜀ICP备：12031012号 
+                | 川公网安备：51080002000184号
+            </span>
+        </div>
+    </div>
+
+    <!-- 引入第三方插件/脚本库 -->
+    <script src='libs/jquery-3.4.1.js'></script>
+    <script src="libs/popper-1.16.0.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <!-- 引入自定义的脚本 -->
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四川信息职业技术学院-首页</title>
+    <!-- 引入第三方样式库 -->
+    <link rel="stylesheet" href="libs/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- 引入自定义样式 -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- 第一行布局 -->
+    <div class="container">
+        <div class="row bg-top" >
+            <div class="col">四川省示范性高等职业院校</div>
+            <div class="col text-right">English Version</div>
+        </div>
+    </div>
+
+    <!-- 第二行代码 -->
+    <div class="container-fluid text-center bg-logo"><!--container-fluid:满屏显示>-->
+        <img src="img/logo.png"  class="logo">
+    </div>
+    <div class="container-fluid" style="transform: translateY(-3rem);">   
+
+    <!-- 第三行导航条 -->
+    <div class="container border-top pl-0 pr-0" ><!--pl==paddding-left       pr==>padding-right-->
+        <nav class='navbar navbar-light navbar-expand-lg  m-0 pl-0 pr-0'><!--导航使用-->
+
+            <a class="nav-link" >|关于川信</a>
+            <button class="navbar-toggler" data-toggle='collapse' data-target='#myNavBar'>
+                <svg width='20' height='20' viewbox='0 0 100 100'>
+                    <path d='M5,5 L95,5    M5,25 L95,25     M5,45 L95,45    M40,65 L60,65 L50,85 Z ' stroke-linecap = 'round' stroke='#666'stroke-width='10px'></path><!--路径-->
+                </svg>
+            </button>
+
+            <div id="myNavBar" class='collapse navbar-collapse'>
+                <ul class="navbar-nav">
+                    <li class="nav-link">|&ensp;专业设置</li>
+                    <li class="nav-link">|&ensp;招生就业</li>
+                    <li class="nav-link">|&ensp;人才引进</li>
+                    <li class="nav-link">|&ensp;人文川信</li>
+                    <li class="nav-link">|&ensp;信息公开</li>
+                    <li class="nav-link">|&ensp;联系我们</li>
+                    <li class="nav-link">|&ensp;录取查询</li>
+                </ul> 
+
+                <div class="ml-2 mr-2">                   
+                    <svg width='20' height='20' viewbox='0 0 100 100'>
+                        <path d='M5,5 L95,5    M5,25 L95,25     M5,45 L95,45    M40,65 L60,65 L50,85 Z ' stroke-linecap = 'round' stroke='#666'stroke-width='10px'></path><!--路径-->
+                    </svg>
+                    站点地图
+                </div>
+
+                <form action="">
+                    <div class='my-search-box'>
+                        <input type="text" placeholder="搜索川信">
+
+                        <!-- <i class="fa fa-search"></i> -->
+                        <svg width='20' height='20' viewbox='0 0 100 100'>
+                            <!-- viewbox='0 0 100 100'调整尺寸 （width='20' height='20'）实际大小-->
+                            <circle cx="40" cy="40" r="30" fill='none' stroke='#666' stroke-width='10px'></circle>
+                            <!--circle画圆    fill='none'  stroke='#666边线颜色    stroke-width='2px'边线粗细-->
+                            <line x1="65" y1="65" x2="90" y2="90" stroke='#666' stroke-width='10px' stroke-linecap="round"></line>
+                            <!-- stroke-linecap="round" 圆角 -->
+                        </svg>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <!-- 第四行代码 -->
+    <div class="container pl-0 pr-0">
+        <div class="carousel slide" id="carouselExampleIndicators"  data-ride="carousel">
+            <!-- 图片 -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/1.jpg"  class="w-100 d-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/2.jpg"  class="w-100 d-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/3.jpg"  class="w-100 d-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/4.png"  class="w-100 d-block">
+                </div>
+            </div>
+            <!-- 指示器 -->
+            <ul class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" ></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2" ></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3" ></li>
+            </ul>
+            <!-- 方向箭头 -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 第五行 文章列表 -->
+    <div class="container pl-0 pr-0">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <style>
+                    /* 修改bootstrap选项卡样式 */
+                    .nav-link.active{
+                        border: none ;
+                        border-bottom: 1px orange solid !important;
+                        position: relative;
+                    }
+                    .nav-link.active::before{
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        border: 5px solid orange;
+                        border-color: transparent transparent orange transparent;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        margin-left: -5px;
+                    }
+                    .nav-link.active:hover,.nav-link.active:focus{
+                        border: transparent transparent orange transparent !important;
+                    }
+                    .tab-pane ul li {
+                        background: url(line.svg) 0 .75rem repeat-x #fff;
+                    }
+                    .tab-content ul li a{
+                        background: #fff;
+                        padding-right: .5rem;
+                    }
+                    .tab-content ul li span{
+                        background: #fff;
+                        padding-right: .5rem;
+                        float: right;
+                    }
+                    ul li span{
+                        background: #fff;
+                    }
+                </style>
+                <!-- 选项卡 -->
+                <div class="nav nav-tabs">
+                    <a href = '#tabNews'  class = 'nav-item nav-link active' data-toggle="tab">要闻</a>
+                    <a href = '#tabZixun' class = 'nav-item nav-link' data-toggle="tab">咨询</a>
+                    <a href = '#tabMedia' class = 'nav-item nav-link' data-toggle="tab">聚焦川信</a>
+                </div>
+                <div class="tab-content" id = 'tabCon'>
+                    <div class="tab-pane fade show active" id = 'tabNews'>
+                        <ul class='pl-3 pr-0'>
+                            <li><a href="#">要闻列表1</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">要闻列表2</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">要闻列表3</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">要闻列表4</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">要闻列表5</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">要闻列表6</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">要闻列表7</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">要闻列表8</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">要闻列表9</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">要闻列表0</a><span>[2020-11-14]</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id = 'tabZixun'>
+                        <ul class='pl-3 pr-0'>
+                            <li><a href="#">咨询列表1</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">咨询列表2</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">咨询列表3</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">咨询列表4</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">咨询列表5</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">咨询列表6</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">咨询列表7</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">咨询列表8</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">咨询列表9</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">咨询列表0</a><span>[2020-11-14]</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade " id = 'tabMedia'>
+                        <ul class='pl-3 pr-0'>
+                            <li><a href="#">聚焦川信列表1</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">聚焦川信列表2</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">聚焦川信列表3</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">聚焦川信列表4</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">聚焦川信列表5</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">聚焦川信列表6</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">聚焦川信列表7</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">聚焦川信列表8</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">聚焦川信列表9</a><span>[2020-11-14]</span></li>
+                            <li><a href="#">聚焦川信列表0</a><span>[2020-11-14]</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-8">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a href = '#tabNews'  data-toggle = "tab" class = 'nav-link '>通知公告</a></li>
+                </ul>
+                <div class="tab-pane" id = 'tabMedia'>
+                    <ul class="pl-3 m-1">
+                        <li><span><a href="">通知信息列表1</a></span><span class='float-right'>[2020-12-09]</span></li>
+                        <li><span><a href="">通知信息列表2</a></span><span class='float-right'>[2020-12-09]</span></li>
+                        <li><span><a href="">通知信息列表3</a></span><span class='float-right'>[2020-12-09]</span></li>
+                        <li><span><a href="">通知信息列表4</a></span><span class='float-right'>[2020-12-09]</span></li>
+                        <li><span><a href="">通知信息列表5</a></span><span class='float-right'>[2020-12-09]</span></li>
+                    </ul>
+                </div>
+                <div class="bg-danger rounded" style="height: 100px;"></div>
+            </div>
+            <div class="col-lg-2 col-md-4">
+                <div class="bg-light mt-5 rounded" style="height: 80%;">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-4 col-md-12">
+                                <i class='fa fa-desktop' style='font-size: 40px;'></i>
+                                <p>信息门户</p> 
+                            </div>
+                            <div class="col-4 col-md-12">
+                                <i class='fa fa-user' style='font-size: 40px;'></i>
+                                <p>办事大厅</p>
+                            </div>
+                            <div class="col-4 col-md-12">
+                                <a>在校学生</a> <br>
+                                <a>教职员工</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 第六行（版权模块） -->
+    <style>
+        @media screen and (max-width: 600px) {
+            .copyright { display: none; }
+        }
+    </style>
+    <div class='bg-secondary pt-2 pb-2 mt-5 text-center'>
+        版权所有：四川信息职业技术学院 
+        <span class='copyright'>
+            | 技术支持：信息中心 
+            | 视觉支持：数字艺术系 
+            | 蜀ICP备：12031012号 
+            | 川公网安备：51080002000184号
+        </span>
+    </div>
+    <div class="text-center">
+        <svg t="1607483364426" class="icon" viewBox="0 0 1202 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3588" width="200" height="200">
+            <path d="M23.016085 977.96783h40.278148a23.016085 23.016085 0 1 1 0 46.03217H23.016085a23.016085 23.016085 0 0 1 0-46.03217z m1061.616914 0h94.94135a23.016085 23.016085 0 0 1 0 46.03217h-94.94135a23.016085 23.016085 0 0 1 0-46.03217z m-920.643394 0h831.456065a23.016085 23.016085 0 0 1 0 46.03217H163.989605a23.016085 23.016085 0 0 1 0-46.03217z" fill="#261D50" p-id="3589"></path>
+            <path d="M519.904587 739.391726h166.866615l-14.385053 175.497647h-138.096509l-14.385053-175.497647z" fill="#FFFFFF" p-id="3590"></path><path d="M528.895245 868.857203h148.166046l-12.773927 46.03217h-122.618192l-12.773927-46.03217z" fill="#FDD838" p-id="3591"></path><path d="M681.909054 926.397415H522.608977l-16.269495-198.513732h191.839067z m-138.096509-23.016085h116.892941l12.500611-152.481562h-141.894163z" fill="#261D50" p-id="3592"></path><path d="M401.386135 11.508042h689.605057a57.540212 57.540212 0 0 1 57.540212 57.540213v612.803259a57.540212 57.540212 0 0 1-57.540212 57.540212h-975.306596a57.540212 57.540212 0 0 1-57.540212-57.540212V69.048255a57.540212 57.540212 0 0 1 57.540212-57.540213h53.224697m76.456557 0h101.242003" fill="#FFFFFF" p-id="3593"></path><path d="M369.940409 916.327878h466.794971v73.363771h-466.794971z" fill="#72C69C" p-id="3594"></path><path d="M851.120433 1001.199691h-497.722835v-97.818361h497.722835z m-474.70675-23.016085h451.690665v-51.786191h-451.690665z" fill="#261D50" p-id="3595"></path><path d="M1098.543345 195.636721V60.417223h-994.007165v631.503828h199.750847z m-766.723327-60.417223a11.508042 11.508042 0 1 1-11.508042 11.508043 11.508042 11.508042 0 0 1 11.508042-11.508043z m-41.716654 23.016085h-77.679286a8.631032 8.631032 0 0 0-8.631032 8.631032v137.765653a11.508042 11.508042 0 0 1-23.016085 0V166.866615a31.647117 31.647117 0 0 1 31.647117-31.647117h77.679286a11.508042 11.508042 0 0 1 0 23.016085zM525.543527 691.921051l572.999818-358.058355v-68.703013L415.584182 691.921051h109.959345zM864.930084 691.921051h233.613261V545.941533L864.930084 691.921051z" fill="#00B7D6" p-id="3596"></path><path d="M1078.404271 701.990588h-952.290511a31.647117 31.647117 0 0 1-31.647117-31.647117V80.556297a31.647117 31.647117 0 0 1 31.647117-31.647117h952.290511a31.647117 31.647117 0 0 1 31.647116 31.647117v589.787174a31.647117 31.647117 0 0 1-31.647116 31.647117z m-952.290511-630.065323a8.631032 8.631032 0 0 0-8.631032 8.631032v589.787174a8.631032 8.631032 0 0 0 8.631032 8.631032h952.290511a8.631032 8.631032 0 0 0 8.631031-8.631032V80.556297a8.631032 8.631032 0 0 0-8.631031-8.631032z" fill="#261D50" p-id="3597"></path><path d="M1090.991192 750.899768h-975.306596a69.12018 69.12018 0 0 1-69.048254-69.048254V69.048255a69.12018 69.12018 0 0 1 69.048254-69.048255h53.224697a11.508042 11.508042 0 0 1 0 23.016085h-53.224697a46.03217 46.03217 0 0 0-46.032169 46.03217v612.803259a46.03217 46.03217 0 0 0 46.032169 46.032169h975.306596a46.03217 46.03217 0 0 0 46.03217-46.032169V69.048255a46.03217 46.03217 0 0 0-46.03217-46.03217H401.386135a11.508042 11.508042 0 0 1 0-23.016085h689.605057a69.12018 69.12018 0 0 1 69.048255 69.048255v612.803259a69.12018 69.12018 0 0 1-69.048255 69.048254zM346.579083 23.016085h-101.242004a11.508042 11.508042 0 0 1 0-23.016085h101.242004a11.508042 11.508042 0 0 1 0 23.016085z" fill="#261D50" p-id="3598"></path>
+        </svg>
+    </div>
+
+    <!-- 引入第三方插件/库 -->
+    <script src="libs/bootstrap-4.3.1-dist/jquery-3.5.1.min.js"></script>
+    <script src="libs/bootstrap-4.3.1-dist/popper.min.js"></script>
+    <script src="libs/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <!-- 引入自定义脚本 -->
+    <script src="js/index.js"></script>
+</body>
+</html>

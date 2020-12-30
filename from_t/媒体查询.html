@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>媒体查询</title>
+    <style>
+        /* @media screen and (max-width:400px) and (min-width: 200px){   
+            默认是screen，也可以是其他，例如打印机
+            
+            max-width的大小从大到小依次设置
+            min-width的大小从小到大依次设置
+            否则样式无效，程序的执行顺序
+        */
+        
+        @media (max-width:1200px){    
+            body{
+                background-color: rgb(61, 136, 207);
+            }
+        }
+        @media (max-width:800px){    
+            body{
+                background-color: rgb(238, 43, 196);
+            }
+        }
+        @media (max-width:400px) and (min-width: 200px){    
+            body{
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    媒体查询是实现响应式的根本/原理<p></p>
+    @media
+</body>
+</html>

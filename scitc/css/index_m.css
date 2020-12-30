@@ -1,0 +1,61 @@
+.bg-top{
+    /* 强制 !important */
+    background: #812990 !important;
+    color: white;
+    /* text-align: right; */
+    
+    transition: all .6s;
+}
+.bg-logo{
+    background: url(../img/headerbg.jpg) 0 -1.1875rem repeat-x;
+    height: 11.25rem;
+    background-size: 100% 100%;
+    transition: all .6s;
+    
+}
+.logo{
+    width: 18.125rem;
+    transition: all .6s;
+}
+.my-search-box{
+    border: 1px solid #666;
+    border-radius: 15px;
+    padding: 3px 15px;
+    box-sizing: border-box;
+}
+.my-search-box input{
+    border: none;
+    outline: none;
+}
+
+@media all and (max-width: 772px){
+    html,body{
+        /* font-size: 10px; */
+        font-size: .75rem;
+        transition: all .6s;
+    }
+}
+/* 当屏幕尺寸变小，搜索框也相对变小 */
+@media all and (max-width:1000px){
+    .my-search-box input{
+        width:90px;
+    }
+}
+@media all and (max-width:996px){
+    .my-search-box input{
+        width:95%;
+    }
+    #myNavBar{
+        font-size: 1.5rem;
+    }
+    /* .navbar a {
+        border
+    } */
+}
+
+/* 覆盖原有导航样式 */
+。navbar a{
+    border-left:1px solid #ccc !important;
+    padding: 0 10px !important;
+}
+

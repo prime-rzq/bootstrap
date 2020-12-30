@@ -1,0 +1,44 @@
+.bg-top{
+    background:#812990 !important;
+    color:white;
+    transition: all .5s;
+}
+.bg-logo{
+    background:url(../img/headerbg.jpg) 0 -1.1875rem repeat-X;
+    height: 11.25rem;
+    background-size:100% 100%;
+    transition: all .5s;
+}
+
+.logo{
+    width: 18.125rem;
+}
+@media all and (max-width:772px){
+    html,body{
+        font-size: 10px;
+    }
+}
+.my-search-box{
+    border:1px solid #666;
+    border-radius: 15px;
+    padding: 2px 5px;
+    box-sizing: border-box;
+}
+.my-search-box input{
+    border: none;
+    outline: none;
+}
+/* 覆盖原有的导航 */
+.navbar a{
+    border-left: 1pa solid #ccc !important;
+    padding: 0 10px !important;
+}
+/* 当屏幕尺寸变小，搜索框也变小 */
+@media all and(max-width:1125px){
+    .my-search-box input{width: 70px;}
+}
+@media all and(max-width:1125px){
+    .my-search-box input{width:95%;}
+    #myNavBar{font-size: 1.5rem;}
+    .navbar a{border-left:none !important;font-size:1.5rem}
+}
